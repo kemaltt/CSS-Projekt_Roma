@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Tangerine&display=swap');
+@font-face {
+    font-family: Santio bold;
+    src: url("../font/Santio\ Bold.otf");
+    /* src: url("../font/Santio\ Bold.ttf"); */
+}
+
+
+/*============================
+General Styles
+=========================*/
+
+
+/* 
+font-family: 'Roboto', sans-serif;
+font-family: 'Tangerine', cursive;
+font-family: Santio bold;
+
+Farbe: #e7bc0e  / #efefef / #6bc1a3 / #cb91b6 / #7eb8e1 / #000 / #fff/ #29272A
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ========================
+        Header
+========================= */
+
+header {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/cleo-topper.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1vh 3vw 10vh 7vw;
+}
+
+header nav {
+    text-align: right;
+    padding: 2vh 5vw 0 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 1rem;
+}
+
+header nav ul li img {
+    width: 8%;
+}
+
+header nav ul li h3 {
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 3px;
+    border-bottom: 2px solid #e7bc0e;
+    padding-bottom: 5px;
+}
+
+.header-title {
+    margin: 20vh 0 5vh 0;
+}
+
+.header-title h2 {
+    color: #fff;
+    font-family: Santio bold;
+    font-size: 4.5rem;
+}
+
+header>p {
+    font-family: 'Tangerine', cursive;
+    font-size: 3rem;
+    color: #e7bc0e;
+}
+
+header span {
+    font-size: 2rem;
+    font-family: Santio bold;
+    margin-left: 5px;
+}
+
+
+/* Header section ------------------*/
+
+section {
+    margin-top: 30vh;
+}
+
+section p:nth-of-type(1) {
+    font-family: Santio bold;
+    color: #6bc1a3;
+    line-height: 3rem;
+    font-size: 2rem;
+    margin: 0 35vw 40vh 6vw;
+}
+
+section p:nth-of-type(1) span {
+    background-color: #29272A;
+    color: #fff;
+}
+
+section .sectionOne,
+section .sectionTwo,
+section .sectionThree {
+    margin: 25vh 0 25vh 5vw;
+}
+
+.sectionOne img,
+.sectionTwo img,
+.sectionThree img {
+    width: 150px;
+    /* width: 11%; */
+    margin-bottom: 30vh;
+}
+
+section h3 {
+    font-family: Santio bold;
+    font-size: 7rem;
+}
+
+section h4 {
+    font-family: Santio bold;
+    font-size: 2rem;
+}
+
+.sectionOne h3 {
+    color: #e7bc0e;
+    margin-bottom: 2vh;
+}
+
+.sectionOne h4 {
+    color: #e7bc0e;
+}
+
+.sectionOne h4 span,
+.sectionTwo h4 span,
+.sectionThree h4 span,
+section p:nth-of-type(2) span {
+    background: #29272A;
+    color: #fff;
+}
+
+.sectionTwo h3 {
+    color: #cb91b6;
+    margin-top: 3vh;
+}
+
+.sectionTwo h4 {
+    color: #cb91b6;
+}
+
+.sectionThree h3 {
+    color: #6bc1a3;
+}
+
+.sectionThree h4 {
+    color: #6bc1a3;
+}
+
+section p:nth-of-type(2) {
+    font-family: Santio bold;
+    color: #7eb8e1;
+    line-height: 3rem;
+    font-size: 1.7rem;
+    margin: 0 6% 0 33%;
+}
+
+
+/* =================================
+              Main
+===================================== */
+
+main {
+    background-image: url("../img/see.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+main img {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2));
+}
+
+
+/* =====================================
+              Footer
+======================================= */
+
+footer {
+    background-color: #1D2025;
+    padding: 1vh 3vw 1vh 7vw;
+}
+
+.footer-title {
+    margin: 30vh 0 5vh 0;
+}
+
+.footer-title h2 {
+    color: #fff;
+    font-family: Santio bold;
+    font-size: 4.5rem;
+}
+
+footer a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: #fff;
+    border: #fff 1px solid;
+    padding: 1rem 2rem;
+    display: inline-block;
+    margin: 4vh 0 40vh 0;
+}
+
+footer a:hover {
+    box-shadow: 8px 7px 0px 0px #fff;
+}
+
+footer p {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 40vh 0 2vh 0;
+    color: #fff;
+    padding-bottom: 1vh;
+}
+
+footer p span {
+    color: #6bc1a3;
+}
+
+footer p span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
