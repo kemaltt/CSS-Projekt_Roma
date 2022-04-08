@@ -2,7 +2,6 @@
 @font-face {
     font-family: Santio bold;
     src: url("../font/Santio\ Bold.otf");
-    /* src: url("../font/Santio\ Bold.ttf"); */
 }
 
 
@@ -44,23 +43,28 @@ header nav {
     padding: 2vh 5vw 0 0;
 }
 
-header nav ul li {
+header nav img {
+    position: relative;
     display: inline-block;
-    list-style: none;
-    margin-left: 1rem;
+    width: 20px;
+    top: 6px;
+    margin-right: 1%;
 }
 
-header nav ul li img {
-    width: 8%;
-}
-
-header nav ul li h3 {
+header nav h3 {
+    display: inline-block;
     color: #fff;
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 3px;
     border-bottom: 2px solid #e7bc0e;
-    padding-bottom: 5px;
+    padding-bottom: 1vh;
+}
+
+header nav h3:hover {
+    cursor: pointer;
+    color: #e7bc0e;
+    border-bottom: 2px solid #fff;
 }
 
 .header-title {
@@ -79,10 +83,11 @@ header>p {
     color: #e7bc0e;
 }
 
-header span {
+header>p span {
     font-size: 2rem;
-    font-family: Santio bold;
-    margin-left: 5px;
+    margin-left: 1vh;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
 }
 
 
@@ -97,7 +102,7 @@ section p:nth-of-type(1) {
     color: #6bc1a3;
     line-height: 3rem;
     font-size: 2rem;
-    margin: 0 35vw 40vh 6vw;
+    margin: 0 35% 40vh 6%;
 }
 
 section p:nth-of-type(1) span {
@@ -105,15 +110,15 @@ section p:nth-of-type(1) span {
     color: #fff;
 }
 
-section .sectionOne,
-section .sectionTwo,
-section .sectionThree {
-    margin: 25vh 0 25vh 5vw;
+section .workers-section,
+section .pay-section,
+section .health-section {
+    margin: 25vh 0 25vh 5%;
 }
 
-.sectionOne img,
-.sectionTwo img,
-.sectionThree img {
+.workers-section img,
+.pay-section img,
+.health-section img {
     width: 150px;
     /* width: 11%; */
     margin-bottom: 30vh;
@@ -129,37 +134,37 @@ section h4 {
     font-size: 2rem;
 }
 
-.sectionOne h3 {
+.workers-section h3 {
     color: #e7bc0e;
     margin-bottom: 2vh;
 }
 
-.sectionOne h4 {
+.workers-section h4 {
     color: #e7bc0e;
 }
 
-.sectionOne h4 span,
-.sectionTwo h4 span,
-.sectionThree h4 span,
+.workers-section h4 span,
+.pay-section h4 span,
+.health-section h4 span,
 section p:nth-of-type(2) span {
     background: #29272A;
     color: #fff;
 }
 
-.sectionTwo h3 {
+.pay-section h3 {
     color: #cb91b6;
     margin-top: 3vh;
 }
 
-.sectionTwo h4 {
+.pay-section h4 {
     color: #cb91b6;
 }
 
-.sectionThree h3 {
+.health-section h3 {
     color: #6bc1a3;
 }
 
-.sectionThree h4 {
+.health-section h4 {
     color: #6bc1a3;
 }
 
@@ -190,7 +195,9 @@ main {
 
 main img {
     width: 100%;
+    object-fit: cover;
     height: 100vh;
+    /* Ansonst Hintergrund überlappt */
     background-image: linear-gradient(rgba(0, 0, 0, 0.2));
 }
 
@@ -201,7 +208,7 @@ main img {
 
 footer {
     background-color: #1D2025;
-    padding: 1vh 3vw 1vh 7vw;
+    padding: 1vh 3% 1vh 7%;
 }
 
 .footer-title {
@@ -222,7 +229,7 @@ footer a {
     border: #fff 1px solid;
     padding: 1rem 2rem;
     display: inline-block;
-    margin: 4vh 0 40vh 0;
+    margin: 4vh 0 35vh 0;
 }
 
 footer a:hover {
