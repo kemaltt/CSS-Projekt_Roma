@@ -171,6 +171,10 @@ section p:nth-of-type(2) {
     margin: 0 6% 0 33%;
 }
 
+section p:nth-of-type(2) span {
+    font-size: 1.7rem;
+}
+
 
 /* =================================
               Main
